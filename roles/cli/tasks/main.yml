@@ -1,0 +1,38 @@
+- name: fish is installed
+  become: yes
+  zypper:
+    name: fish 
+
+- name: Command Line Apps are Installed
+  become: yes
+  zypper:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ cli_apps }}"
+
+- name: fish as default shell
+  become: yes
+  user:
+    name: "{{ ansible_env.USER }}"
+    shell: /usr/bin/fish
+
+- name: local bin dirtory
+  file:
+    state: directory
+    mode: 0700
+    path: ~/bin/
+ 
+- name: termite is installed
+  become: yes
+  zypper: 
+    name: termite 
+
+- name: tmux is installed
+  become: yes
+  zypper:
+    name: tmux
+ 
+- name: neovim is installed
+  become: yes
+  zypper: 
+    name: neovim  

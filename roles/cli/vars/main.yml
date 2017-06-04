@@ -1,0 +1,10 @@
+cli_apps:
+  - ack
+  - colordiff
+  - git
+  - htop
+  - jq
+  - password-store
+  - ShellCheck
+  - tig
+  - xsel
