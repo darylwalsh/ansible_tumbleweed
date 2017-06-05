@@ -1,0 +1,65 @@
+- zypper: i3 is installed
+    name: i3
+    state: present
+    disable_gpg_check: yes
+
+- zypper: i3status is installed
+    name: i3status
+    state: present
+    disable_gpg_check: yes
+
+- zypper: i3lock is installed
+    name: i3lock
+    state: present
+    disable_gpg_check: yes
+
+
+#- zypper: i3blocks is installed
+#    name: i3blocks
+#    state: present
+#    disable_gpg_check: yes
+
+- zypper: i3session is installed
+    name: i3session
+    state: present
+    disable_gpg_check: yes
+
+- zypper: dmenu is installed
+    name: dmenu
+    state: present
+    disable_gpg_check: yes
+
+- zypper: feh is installed
+    name: feh
+    state: present
+    disable_gpg_check: yes
+
+- zypper: xautolock is installed
+    name: dmenu
+    state: present
+    disable_gpg_check: yes
+
+- zypper: dunst is installed
+    name: dunst
+    state: present
+    disable_gpg_check: yes
+
+- zypper: NetworkManager-gnome is installed
+    name: NetworkManager-gnome
+    state: present
+    disable_gpg_check: yes
+
+- zypper: scrot is installed
+    name: scrot
+    state: present
+    disable_gpg_check: yes
+
+- zypper: rofi is installed
+    name: rofi
+    state: present
+    disable_gpg_check: yes
+
+- zypper: shutter is installed
+    name: shutter
+    state: present
+    disable_gpg_check: yes

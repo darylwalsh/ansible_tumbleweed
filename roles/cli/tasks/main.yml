@@ -21,16 +21,16 @@
     state: directory
     mode: 0700
     path: ~/bin/
- 
+
 - name: termite is installed
   become: yes
   zypper: 
     name: termite 
 
-- name: tmux is installed
+- name: weechat is installed
   become: yes
   zypper:
-    name: tmux
+    name: weechat 
  
 - name: neovim is installed
   become: yes

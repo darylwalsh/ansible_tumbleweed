@@ -1,0 +1,9 @@
+- name: midori is installed
+  become: yes
+  zypper:
+    name: midori
+
+- zypper:
+    name: qupzilla
+    state: present
+    disable_gpg_check: yes

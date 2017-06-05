@@ -1,7 +1,18 @@
 ---
 - hosts: 127.0.0.1
   connection: local
+  vars:
+    powerline_default_top_theme: powerline
+    powerline_shell_vcs_branch: yes
+    powerline_users:
+      - diavolo
+      - root
   roles:
-    - cli
-    - git
-    - atom
+          # - codecs
+          # - browsers
+    - i3
+      # - mjanser.powerline
+      #- development
+      #- cli
+      #- git
+      #- atom

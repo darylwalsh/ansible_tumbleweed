@@ -1,0 +1,17 @@
+- name: Media codecs are Installed
+  become: yes
+  zypper:
+    name: "{{ item }}"
+  with_items:
+    -k3b-codecs
+    -ffmpeg
+    -lame
+    -gstreamer-plugins-bad
+    -gstreamer-plugins-ugly
+    -gstreamer-plugins-ugly-orig-addon
+    -gstreamer-plugins-libav
+
+- name: flash is installed
+  become: yes
+  zypper:
+    name: flash-player 
